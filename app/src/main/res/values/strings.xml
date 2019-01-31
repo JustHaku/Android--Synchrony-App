@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Coregulation Application</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
+    <string name="app_name">Emoticanvas</string>
+    <string name="user_Circle">User Circle</string>
+    <string name="title_activity_landing__screen">Synch with me</string>
+    <string name="title_activity_partner_selection">partner_selection</string>
 </resources>

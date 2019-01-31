@@ -43,6 +43,6 @@ public class CustomView extends View {
         Paint paint = new Paint();
         paint.setColor(Color.GREEN);
 
-      //  canvas.drawCircle((this.getHeight() / 2),(this.getWidth() / 2),60, paint);
+
     }
 }

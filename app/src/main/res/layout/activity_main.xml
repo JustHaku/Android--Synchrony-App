@@ -1,36 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#e9f1fc"
+    tools:context=".MainActivity" >
 
-
-    <pl.bclogic.pulsator4droid.library.PulsatorLayout
-        android:id="@+id/pulsator"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:pulse_count="2"
-        app:pulse_duration="5000"
-        app:pulse_repeat="0"
-        app:pulse_color="#6b59b2"
-        app:pulse_startFromScratch="false"
-        app:pulse_interpolator="Linear">
-    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
-
-
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginBottom="23dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/next"
+        android:cropToPadding="false"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        android:src="@drawable/next" />
 
     <ImageView
+        android:id="@+id/user_Circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@mipmap/ic_heart"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="204dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/user_Circle"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/circle" />
 
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:src="@mipmap/ucon" />
 
-
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="You"
+        android:textColor="#7023B7"
+        android:textSize="22sp" />
 
 </RelativeLayout>

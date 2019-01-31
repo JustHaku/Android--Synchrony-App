@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9f1fc"
+    tools:context=".landing_Screen">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="62dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="Who would you like to connect"
+        android:textColor="#021f54"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="107dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="with for this session?"
+        android:textColor="#021f54"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/contact1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="225dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/contact_avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/contact_avatar" />
+
+    <ImageButton
+        android:id="@+id/contact2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="225dp"
+        android:layout_toRightOf="@+id/contact1"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/contact_avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/contact_avatar" />
+
+    <ImageButton
+        android:id="@+id/contact3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="225dp"
+        android:layout_toRightOf="@+id/contact2"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/contact_avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/contact_avatar" />
+
+    <ImageButton
+        android:id="@+id/contact4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/contact1"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/contact_avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/contact_avatar" />
+
+    <ImageButton
+        android:id="@+id/contact5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/contact2"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/contact4"
+        android:layout_toRightOf="@+id/contact4"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/contact_avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/contact_avatar" />
+
+    <ImageButton
+        android:id="@+id/contact6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/contact2"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/contact5"
+        android:layout_toRightOf="@+id/contact5"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/contact_avatar"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/contact_avatar" />
+
+    <TextView
+        android:id="@+id/solo_activity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="202dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="To begin a solo session "
+        android:textColor="#021f54"
+        android:textSize="22sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/solo_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="169dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="click the continue button."
+        android:textColor="#021f54"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/proceedButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/next"
+        android:scaleType="fitXY"
+        android:src="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginBottom="23dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/next"
+        android:cropToPadding="false"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        android:src="@drawable/next" />
+
+</RelativeLayout>
