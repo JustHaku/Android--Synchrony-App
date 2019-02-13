@@ -4,8 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e9f1fc"
+    android:background="#E9EAEC"
     tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/partnerIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@mipmap/pcon" android:layout_alignParentStart="true"
+        android:layout_above="@+id/returnButton"/>
+    <TextView
+            android:id="@+id/partnerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/courgette_regular"
+            android:gravity="center"
+            android:text="Your Partner"
+            android:textColor="#ffa834"
+            android:textSize="22sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="152dp"
+            android:layout_alignParentBottom="true"/>
 
     <ImageButton
         android:id="@+id/returnButton"
@@ -37,27 +57,33 @@
         android:src="@drawable/circle" />
 
     <ImageView
+        android:id="@+id/partner_Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:contentDescription="partner_Circle"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/partner_circle"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
         android:id="@+id/userIcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="115dp"
         android:gravity="center"
-        android:src="@mipmap/ucon" />
+        android:src="@mipmap/ucon" android:layout_alignParentStart="true"/>
 
     <TextView
-        android:id="@+id/userText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp"
-        android:fontFamily="@font/courgette_regular"
-        android:gravity="center"
-        android:text="You"
-        android:textColor="#7023B7"
-        android:textSize="22sp" />
+            android:id="@+id/userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/courgette_regular"
+            android:gravity="center"
+            android:text="You"
+            android:textSize="22sp" android:layout_alignParentStart="true" android:layout_above="@+id/userIcon"
+            android:layout_marginBottom="-115dp" android:textColor="#d757f6"/>
 
 </RelativeLayout>
