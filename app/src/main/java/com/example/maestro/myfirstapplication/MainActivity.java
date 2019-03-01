@@ -146,12 +146,13 @@ public class MainActivity extends Activity {
         new CountDownTimer(length * 60000, 1000) {
 
             public void onTick(long millisUntilFinished) {
-                timer.setText("Seconds remaining: " + millisUntilFinished / 1000);
+               timer.setText("Seconds remaining: " + millisUntilFinished / 1000);
             }
 
             public void onFinish() {
-                timer.setVisibility(View.GONE);
+              // timer.setVisibility(View.GONE);
                activityLength.setText("All done, you can rest now!");
+               timer.setText("Click the stop button to restart.");
             }
         }.start();
 
