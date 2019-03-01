@@ -85,10 +85,37 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="35dp"
         android:text="Activity Length:"
         android:textSize="22sp"
         android:typeface="normal"
+        android:textColor="#021f54" />
+
+    <TextView
+        android:id="@+id/breathLenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="256dp"
+        android:fontFamily="@font/courgette_regular"
+        android:text="Breath Length:"
+        android:textColor="#021f54"
+        android:textSize="22sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/countDown"
+        android:fontFamily="@font/courgette_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="default"
+        android:textSize="22sp"
+        android:typeface="normal"
+        android:visibility="gone"
         android:textColor="#021f54" />
 
     <TextView
@@ -97,10 +124,10 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/user_Circle"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="159dp"
         android:fontFamily="@font/courgette_regular"
-        android:text="1 breath cycle(s)"
+        android:text="1 Minute(s)"
         android:textColor="#021f54"
         android:textSize="22sp"
         android:typeface="normal" />

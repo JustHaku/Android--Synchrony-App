@@ -2,6 +2,7 @@ package com.example.maestro.myfirstapplication;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
@@ -26,7 +27,9 @@ public class MainActivity extends Activity {
     Integer bLength = 1;
     TextView duration;
     TextView breathLength;
+    TextView breathLengthText;
     TextView activityLength;
+    TextView timer;
     Animation expand;
 
     @Override
@@ -36,7 +39,9 @@ public class MainActivity extends Activity {
         user_Circle = findViewById(R.id.user_Circle);
         duration =(TextView)findViewById(R.id.activityLen2);
         breathLength = (TextView)findViewById(R.id.breathLen);
+        breathLengthText = (TextView)findViewById(R.id.breathLenText);
         activityLength = (TextView)findViewById(R.id.activityLen);
+        timer = (TextView)findViewById(R.id.countDown);
         returnButton = findViewById(R.id.returnButton);
         plusButton = findViewById(R.id.plusIcon);
         plusButton2 = findViewById(R.id.plusIcon2);
@@ -59,7 +64,7 @@ public class MainActivity extends Activity {
 
                 if(length >= 1) {
                     length++;
-                    duration.setText(length + " breath cycle(s)");
+                    duration.setText(length + " Minute(s)");
                 }
             }
         });
@@ -81,7 +86,7 @@ public class MainActivity extends Activity {
 
                 if(length >= 2) {
                     length--;
-                    duration.setText(length + " breath cycle(s)");
+                    duration.setText(length + " Minute(s)");
                 }
             }
         });
@@ -133,36 +138,24 @@ public class MainActivity extends Activity {
         stopButton.setVisibility(View.VISIBLE);
         duration.setVisibility(View.GONE);
         breathLength.setVisibility(View.GONE);
+        breathLengthText.setVisibility(View.GONE);
         activityLength.setText("Breathe with me... Keep up!");
-        user_Circle.setAnimation(expand);
+        user_Circle.startAnimation(expand);
+        timer.setVisibility(View.VISIBLE);
 
-        expand.setAnimationListener(new AnimationListener() {
+        new CountDownTimer(length * 60000, 1000) {
 
-            @Override
-            public void onAnimationEnd(Animation arg0) {
-
-               for(int i = 0; i < length; i++) {
-
-                    Animation expand = AnimationUtils.loadAnimation(MainActivity.this, R.anim.expand);
-                    expand.setAnimationListener(this);
-                    expand.setDuration(bLength * 1000);
-                    user_Circle.startAnimation(expand);
-                    // counter++;
-                }
+            public void onTick(long millisUntilFinished) {
+                timer.setText("Seconds remaining: " + millisUntilFinished / 1000);
             }
 
-            @Override
-            public void onAnimationRepeat(Animation arg0) {
-                // TODO Auto-generated method stub
-
+            public void onFinish() {
+                timer.setVisibility(View.GONE);
+               activityLength.setText("All done, you can rest now!");
             }
+        }.start();
 
-            @Override
-            public void onAnimationStart(Animation arg0) {
 
-            }
-
-        });
 
     }
 
