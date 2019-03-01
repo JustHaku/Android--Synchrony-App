@@ -91,7 +91,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="ffa834" />
+                                                <entry key="color" value="021f54" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -102,7 +102,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/D:/Programs%20&amp;%20Extensions/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_person_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/D:/Programs%20&amp;%20Extensions/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_remove_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -112,9 +112,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundColor" value="e9eaec" />
                                       <entry key="cropped" value="true" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="outputName" value="pcon" />
+                                      <entry key="outputName" value="minusicon" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -204,7 +205,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Programs%20&amp;%20Extensions/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_navigate_next_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Programs%20&amp;%20Extensions/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_fiber_new_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -215,7 +216,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="021f54" />
-                            <entry key="outputName" value="next" />
+                            <entry key="outputName" value="ic_fiber_new_black_24dp" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\Maestro\Desktop\test.svg" />
                           </map>

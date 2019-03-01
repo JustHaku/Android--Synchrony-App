@@ -4,9 +4,9 @@
         android:shape="oval" >
 
     <gradient
-        android:endColor="#73d757f6"
+        android:endColor="#d757f6"
         android:gradientRadius="0"
-        android:startColor="#73d757f6"
+        android:startColor="#d757f6"
         android:type="radial"
         android:useLevel="false"/>
 

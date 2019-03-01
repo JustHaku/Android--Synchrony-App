@@ -22,7 +22,7 @@ public class landing_Screen extends Activity {
         transitionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(landing_Screen.this, partner_selection.class));
+                startActivity(new Intent(landing_Screen.this, MainActivity.class));
             }
         });
     }

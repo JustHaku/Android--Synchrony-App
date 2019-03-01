@@ -13,7 +13,7 @@
         android:pivotX="50%"
         android:pivotY="50%"
         android:repeatMode="reverse"
-        android:repeatCount="infinite"
+        android:repeatCount="1"
         />
 
     <alpha
