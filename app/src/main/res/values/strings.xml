@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Emoticanvas</string>
+    <string name="app_name">Breathe with me</string>
     <string name="user_Circle">User Circle</string>
-    <string name="title_activity_landing__screen">Synch with me</string>
+    <string name="title_activity_landing__screen">Breathe with me</string>
     <string name="title_activity_partner_selection">partner_selection</string>
 </resources>
