@@ -249,7 +249,6 @@ public class MainActivity extends Activity {
                introText.setText("All done, you can rest now!");
                choiceText1.setText("Click the stop button to restart.");
 
-               startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         }.start();
 
