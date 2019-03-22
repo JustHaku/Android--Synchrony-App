@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Emoticanvas</string>
+    <string name="title_activity_landing__screen">landing_Screen</string>
+    <string name="title_activity_partner_selection">partner_selection</string>
+</resources>

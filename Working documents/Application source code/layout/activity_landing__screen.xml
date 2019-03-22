@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9f1fc"
+    tools:context=".landing_Screen">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="43dp"
+        android:fontFamily="cursive"
+        android:text="Synch with me"
+        android:textSize="36sp"
+        android:textColor="#021f54"
+        android:visibility="visible"
+        app:fontFamily="@font/courgette" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="214dp"
+        android:fontFamily="cursive"
+        android:text="Ready for another session?"
+        android:textColor="#021f54"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:fontFamily="@font/courgette" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="cursive"
+        android:text="Hello, Placeholder Name"
+        android:textColor="#021f54"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:fontFamily="@font/courgette" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="351dp"
+        android:fontFamily="cursive"
+        android:text="Let's improve that."
+        android:textColor="#021f54"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:fontFamily="@font/courgette" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="23dp"
+        android:background="@mipmap/play_button"
+        android:scaleType="fitXY"
+        android:src="@mipmap/play_button" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="214dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:progress="0"
+        android:progressTint="#021f54"
+        android:radius="8dp" />
+
+
+</RelativeLayout>
